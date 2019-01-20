@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Gris Official Page</title>
+<link href = "styles-1.css" rel="stylesheet">
+<script src = "https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+	<div class="button r" id="button-eng">
+          <input type="checkbox" class="checkbox" id = "eng-rus" onChange="changelang()">
+          <div class="knobs"></div>
+          <div class="layer"></div>
+        </div>
+<div class = "nav">
+<a><strong>Gris</strong></a>
+<nav class = "navbar">
+	<ul class="navbar">
+	<li><a class = "navbar" href="https://nomada.studio/" id = "home">Home</a></li>
+	<li><a class="navbar" href = "#about">About</a></li>
+	<li><a class = "navbar" href = "">Buy now</a><ul>
+		<li class = "hov"><a href = "https://store.steampowered.com/app/683320/GRIS/">Steam</a></li>
+		<li class = "hov"><a href = "https://www.nintendo.com/games/detail/gris-switch">NintendoShop</a></li>
+		</ul>
+	</li>
+	</ul>
+</nav>
+</div>
+<div class = "main">
+	<img src ="img/GRISgif.gif" height="400" id = "main">
+	<p id = "about">Gris is a hopeful young girl lost in her own world, dealing with a painful experience in her life. Her journey though sorrow is manifestied in her dress, which grants new abilitiesto better navigates in her faded reality. As the story unfolds, Gris will grom emotionally and see her world in a different way, revealing new paths to explore using her new abilities.</p>
+	<br>
+	<p id = "str"><strong>A serene and evocative narrative experience for Nintendo Switch and PC later this year!</strong></p>
+	<br>
+	<p>Published by Developer Digital, GRIS is an experience free of danger, frustration or death. Players will explore a meticulos desinged world brought to life with a delicate art, detailed animation and an elegant original score. Though the game light puzzles, platforming sequences and optional skill-based challenges will reveal themselves as more of Gris's world becomes acessible. </p>
+	<button type = "button" class = "b1" id = "b1"></button>
+	<button type = "button" class = "b2" id = "b2" onClick="gallery()"></button>
+	<div class = "b-popup" id = "video">
+	<div class = "b-popup-content">
+		<img src ="img/Close-Button.png" width = "30" height = "30" id = "back">
+		<video src="img/GRIS - Reveal Trailer.mp4" width = "700"  autoplay loop controls preload = "auto">
+	</div>
+	</div>
+	<div ID = "toTop" ><img src="img/93849_up_512x512.png" width="40px" height="40px"></div >
+</div>
+<div class = "foot">
+	<center>Copyright © 2018 Nomanda Studio. All rights reserved.</center>
+</div>
+	<script type="text/javascript">
+		$(document).ready(function(){
+	PopUpHide(); });
+		$('#b1').click(function(){PopUpShow();});
+	function PopUpShow(){
+	$('#video').show();
+}
+	$('#back').click(function(){PopUpHide()});
+	
+
+function PopUpHide(){
+	$('#video').hide();
+}
+function gallery(){
+	window.location.assign("classic-demo_1.html");
+};
+function changelang(){
+			 window.location.assign("gris-ru.html");
+		 };
+$(function() {
+ 
+$(window).scroll(function() {
+ 
+if($(this).scrollTop() != 0) {
+ 
+$('#toTop').fadeIn();
+ 
+} else {
+ 
+$('#toTop').fadeOut();
+ 
+}
+ 
+});
+ 
+$('#toTop').click(function() {
+ 
+$('body,html').animate({scrollTop:0},800);
+ 
+});
+ 
+});
+		
+	</script>
+</body>
+</html>

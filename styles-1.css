@@ -1,0 +1,314 @@
+@charset "utf-8";
+/* CSS Document */
+html{
+	margin: 0px;
+	min-height: 100%;
+	min-width: 100%;
+	background-color: #000000;
+}
+.nav{
+	font-family:"Times New Roman", Cambria, "Hoefler Text", "Liberation Serif", Times, "serif";
+	font-size: 90px;
+	background-color: #000000;
+	color: #CD8673;
+	padding: 5px;
+}
+.navbar{
+	text-align: center;
+	font-family:"Times New Roman", Cambria, "Hoefler Text", "Liberation Serif", Times, "serif";
+	font-size: 90px;
+	color: #CD8673;
+	background-color: #000000;
+	margin-left: 90px;
+	display: inline;
+}
+
+li{
+	display: inline;
+	position: relative;
+}
+
+ul ul{
+	position: absolute;
+	display: none;
+	left: 0;
+	background-color: #000000;
+}
+
+li:hover ul{
+	display: block;
+} 
+
+li a{
+	font-size: 35px;
+	padding-right: 30px;
+	color: #CD8673;
+	text-decoration: none
+}
+ 
+ul ul a:hover{
+	text-decoration: underline;
+	
+}
+
+button.navbar{
+	border-radius: 20px;
+	width: 70px;
+	height: 35px;
+	float: right;
+}
+
+a.navbar{
+	user-select: none;
+	text-decoration: none;
+	outline: none;
+	padding: 1 em 2 em;
+	padding-right: 50px;
+	font-size: 35px;
+}
+
+ul.navbar{
+	margin: 0;
+	padding: 4px;
+}
+
+ul.navbar li{
+	display: inline;
+	margin: 5px;
+}
+
+p{
+	padding-left: 270px;
+	padding-right: 280px;
+	text-align: justify;
+	line-height: 130%;
+	text-indent: 45px;
+	font-family:"Times New Roman", Cambria, "Hoefler Text", "Liberation Serif", Times, "serif";
+	font-size: 25px;
+}
+
+#str{
+	text-align: center;
+	font-family:"Times New Roman", Cambria, "Hoefler Text", "Liberation Serif", Times, "serif";
+	font-size: 35px;
+}
+.main{
+	background-color:#FFFFFF;
+	margin: 0px;
+}
+#main {
+	min-width: 100%;
+	margin-top: 0px;
+	padding-top: 0px;
+}
+
+button{
+	border-radius: 300px;
+	width: 300px;
+	height: 300px;
+	margin-top: 40px;
+	margin-right: 10px;
+	margin-bottom: 40px;
+	border: 5px solid #CD8673;
+}
+
+button.b1{
+	background-image:url(file:///C:/Users/user/Downloads/trailer1.jpg);
+	background-repeat: no-repeat;
+	margin-left: 250px;
+}
+
+button.b1-ru{
+	background-image:url(file:///C:/Users/user/Downloads/trailer1.jpg);
+	background-repeat: no-repeat;
+	margin-left: 250px;
+}
+
+button.b1-ru:hover{
+	background-image: url(file:///C:/Users/user/Downloads/TREJLERr2.jpg);
+	background-repeat: no-repeat;
+}
+
+button.b1:hover{
+	background-image: url(file:///C:/Users/user/Downloads/trailer2.jpg);
+	background-repeat: no-repeat;
+}
+
+button.b2{
+	float: right;
+	background-image: url(file:///C:/Users/user/Downloads/GALLERY1.jpg);
+	background-repeat: no-repeat;
+	margin-right: 275px;
+}
+
+button.b2-ru{
+	float: right;
+	background-image: url(file:///C:/Users/user/Downloads/GALLERY1.jpg);
+	background-repeat: no-repeat;
+	margin-right: 275px;
+}
+
+button.b2:hover{
+	background-image: url(file:///C:/Users/user/Downloads/gallery2_2.jpg);
+	background-repeat: no-repeat;
+}
+
+button.b2-ru:hover{
+	background-image: url(file:///C:/Users/user/Downloads/GALEREYar2.jpg);
+	background-repeat: no-repeat;
+}
+
+.b-popup{
+	width: 100%;
+	min-height: 100%;
+	background-color: rgba(0,0,0,0.5);
+	overflow: hidden;
+	position: fixed;
+	top: 0px;
+}
+
+.b-popup-content{
+	margin-top: 15px;
+	margin-left: 350px;
+	margin-right: 400px;
+	width: 100px;
+	height: 10px;
+	padding: 10px;
+	bottom: 10px;
+}
+
+.foot{
+	font-family:"Times New Roman", Cambria, "Hoefler Text", "Liberation Serif", Times, "serif";
+	font-size: 25px;
+	background-color: #000000;
+	color: #CD8673;
+	padding: 5px;
+}
+
+
+.button-cover:before
+{
+    counter-increment: button-counter;
+    content: counter(button-counter);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: #e7efef;
+    font-size: 12px;
+    line-height: 1;
+    padding: 5px;
+}
+
+.button-cover, .knobs, .layer
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.button
+{
+	float: right;
+    position: relative;
+    top: 50%;
+    width: 74px;
+    height: 36px;
+    margin: 55px 20px 0 auto;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.button.r, .button.r .layer
+{
+    border-radius: 100px;
+}
+
+.checkbox
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.knobs
+{
+    z-index: 2;
+}
+
+.layer
+{
+    width: 100%;
+	background-color: #E9B5B6;
+	opacity: 0.5;
+    transition: 0.3s ease all;
+    z-index: 1;
+}
+
+/* Button 1 */
+#button-eng .knobs:before
+{
+    content: 'ENG';
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 20px;
+    height: 10px;
+    color: #000000;
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 1;
+    text-align: center;
+    padding: 9px 4px;
+    background-color: #CD8673;
+    border-radius: 50%;
+    transition: 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15) all;
+}
+
+#button-eng .checkbox:checked + .knobs:before
+{
+    content: 'RU';
+    left: 42px;
+    background-color: #CD8673;
+}
+
+#button-eng .checkbox:checked ~ .layer
+{
+    background-color: #E9B5B6;
+	opacity: 0.5;
+}
+
+#button-eng .knobs, #button-eng .knobs:before, #button-eng .layer
+{
+    transition: 0.3s ease all;
+}
+
+#toTop {
+width: 45px;
+height: 45px;
+border-radius: 45px;
+background-color: #CD8673;
+text-align:center;
+position:fixed;
+bottom:30px; /* отступ кнопки от нижнего края страницы*/
+right:10px;
+cursor:pointer;
+display:none;
+margin-right: 45px;
+}
+
+#back{	
+width: 45px;
+height: 45px;
+border-radius: 45px;
+background-color: #CD8673;
+margin-bottom: 0;
+margin-left: 670px;
+margin-bottom: 20;
+}
